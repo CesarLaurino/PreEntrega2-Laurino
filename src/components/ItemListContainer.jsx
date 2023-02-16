@@ -5,19 +5,17 @@ const ItemListContainer = () => {
     const [items,setItems] = useState([]);
 
     useEffect(() => {
-        fetch ("https://fakestoreapi.com/products")
+        fetch ("https://fakestoreapi.com/products?limit=20")
         .then ((respuesta) => respuesta.json ())
         .then ((data) => {
-            setItems(data.results)
+            setItems(data)
         })
     }, [])
 
     return (
-        <div className="container">
             <div className="row">
-                <ItemList items = {items} />
+                <ItemList items = {items}  />
             </div>
-        </div>
     )
 }
 
