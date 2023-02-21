@@ -8,10 +8,9 @@ const ItemDetail = ({item}) => {
                 <img src={item.imagen} alt={item.nombre} className="img-fluid" />
             </div>
             <div className="col-md-4">
-                <h1>{item.nombre}</h1>
-                <h5>{item.calorias} kcal</h5>
-                <p>{item.descripcion}</p>
-                <p><b>${item.precio}</b></p>
+                <h1>{item.title}</h1>
+                <p>{item.description}</p>
+                <p><b>${item.price}</b></p>
                 <ItemCount stock={item.stock} />
             </div>
         </div>
