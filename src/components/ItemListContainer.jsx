@@ -1,17 +1,24 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
 import ItemList from "./ItemList";
+import { useParams } from "react-router-dom";
+import arrayProductos from "./json/productos.json";
 
 const ItemListContainer = () => {
     const [items,setItems] = useState([]);
+    const {id} = useParams();
 
     useEffect(() => {
-        fetch ("https://fakestoreapi.com/products")
-        .then ((respuesta) => respuesta.json ())
-        .then ((data) => {
-            setItems(data)
+        const promesa = new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos);
+            }, 2000);
+        });
+
+        promesa.then((data) => {
+            setItems(data);
         })
-    }, [])
+    }, [id]);
+
 
     return (
             <div className="row container-card">
