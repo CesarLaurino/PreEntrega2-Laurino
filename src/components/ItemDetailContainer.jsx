@@ -10,7 +10,7 @@ const ItemDetailContainer = () => {
     useEffect(() => {
         const promesa = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(arrayProductos.find(item => item.id === parseInt(id))); //Filtrar mi array de productos y devulevo 1 solo objeto
+                resolve(arrayProductos.find(item => item.id === parseInt(id)));
             }, 2000);
         });
 
