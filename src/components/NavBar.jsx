@@ -16,16 +16,16 @@ const NavBar = () => {
                             <div className="collapse navbar-collapse" id="navbarNav">
                                 <ul className="navbar-nav">
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" activeClassName={"active"} to={"/category/men's clothing"}>Indumentaria Masculina</NavLink>
+                                        <NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"} to={"/category/men's clothing"}>Indumentaria Masculina</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link active" activeClassName={"active"} to={"/category/women's clothing"}>Indumentaria Femenina</NavLink>
+                                        <NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"} to={"/category/women's clothing"}>Indumentaria Femenina</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" activeClassName={"active"} to={"/category/jewelery"}>Joyeria</NavLink>
+                                        <NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"} to={"/category/jewelery"}>Joyeria</NavLink>
                                     </li>
                                     <li className="nav-item">
-                                        <NavLink className="nav-link" activeClassName={"active"} to={"/category/electronics"}>Electronica</NavLink>
+                                        <NavLink className={({isActive}) => isActive ? "nav-link active" : "nav-link"} to={"/category/electronics"}>Electronica</NavLink>
                                     </li>
                                 </ul>
                             <div className="col navbar-warning bg-warning d-flex align-items-center justify-content-end">

@@ -10,7 +10,7 @@ const ItemListContainer = () => {
     useEffect(() => {
         const promesa = new Promise((resolve, reject) => {
             setTimeout(() => {
-                resolve(id ? arrayProductos.filter(item => item.categoria === id) : arrayProductos);
+                resolve(id ? arrayProductos.filter(item => item.category === parseInt(id)) : arrayProductos);
             }, 2000);
         });
 

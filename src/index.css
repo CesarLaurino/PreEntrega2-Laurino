@@ -19,7 +19,7 @@ body{
 }
 
 .nav-item{
-    margin: 10px;
+    margin: 5px;
 }
 
 .redes {
@@ -52,19 +52,27 @@ footer .copy {
 }
 
 .card{
-    margin: 20px;
+    margin: 10px;
     display: flex;
     align-items: center;
+    width: 150px;
+    text-decoration: none;
+}
+
+.cartas{
+    margin: 5px;
+    padding: 0px;
 }
 
 .card-img{
-    width: 150px;
+    width: 100px;
     height: 200px;
     margin: 10px;
+    object-fit: contain;
 }
 
 .card-body{
-    margin: 10px;
+    margin: 5px;
     padding:0;
     display: flex;
     flex-direction: column;
@@ -73,20 +81,18 @@ footer .copy {
 
 .card-title{
     margin: 10px;
-    font-size: 25px;
-}
+    font-size: 20px;
+    text-overflow: ellipsis;
 
-.card-text{
-    margin: 10px;
-    font-size: 12px;
-}
-
-.card-price{
-    display: flex;
-    align-self: center;
 }
 
 .container-card{
+    display: flex;
+    margin: 5px;
     margin-left: 20px;
     margin-right: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
