@@ -78,10 +78,15 @@ footer .copy {
 
 .card-text{
     margin: 10px;
-    font-size: 15px;
+    font-size: 12px;
 }
 
 .card-price{
     display: flex;
     align-self: center;
+}
+
+.container-card{
+    margin-left: 20px;
+    margin-right: 20px;
 }

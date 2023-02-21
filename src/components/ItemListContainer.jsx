@@ -13,7 +13,7 @@ const ItemListContainer = () => {
     }, [])
 
     return (
-            <div className="row">
+            <div className="row container-card">
                 <ItemList items = {items}  />
             </div>
     )
