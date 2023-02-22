@@ -23,12 +23,16 @@ body{
 }
 
 .redes {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 30px;
     margin-top: 50px;
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
+    background-color: rgb(255, 193, 7);
 }
 
 .redes1 {
@@ -38,13 +42,6 @@ body{
 
 ul {
     padding-left: 0rem;
-}
-
-footer .copy {
-    text-align: left;
-    font-size: 10px;
-    color: grey;
-    font-style: italic;
 }
 
 .logoml{
@@ -95,4 +92,30 @@ footer .copy {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.img-detail{
+    width: 150px;
+}
+
+.desc-detail{
+    font-size: 15px;
+}
+
+.title-detail{
+    font-size: 25px;
+}
+
+.boton-detail-menos, .boton-detail-n, .boton-detail-mas{
+    color: white;
+    border-color: white;
+    background-color: goldenrod;
+    width: 50px;
+}
+
+.boton-detail{
+    color: white;
+    border-color: white;
+    background-color: goldenrod;
+    width: 150px;
 }
