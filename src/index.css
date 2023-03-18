@@ -9,17 +9,8 @@ body{
 }
 
 .carrito{
-    background-color: rgba(255, 255, 0, 0.664);
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.333);
-}
-
-.navbar-toggler{
-    background-color: yellow;
-    box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.333);
-}
-
-.nav-item{
-    margin: 5px;
+    background-color: rgb(173, 156, 126);
+    box-shadow: 0px 0px 20px 5px rgb(25, 37, 55);
 }
 
 .redes {
@@ -32,7 +23,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     list-style-type: none;
-    background-color: rgb(255, 193, 7);
+    background-color: rgb(25, 37, 55);
 }
 
 .redes1 {
@@ -44,8 +35,29 @@ ul {
     padding-left: 0rem;
 }
 
-.logoml{
+.logolh{
     height: 100px;
+}
+
+.navbarra{
+    background-color: rgb(25, 37, 55);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(173, 156, 126);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: darkgoldenrod;
+}
+
+.navbar-toggler{
+    background-color: rgb(173, 156, 126);
+    box-shadow: 0px 0px 20px 5px rgb(25, 37, 55);
+}
+
+.nav-item{
+    margin: 5px;
 }
 
 .card{
